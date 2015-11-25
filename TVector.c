@@ -66,9 +66,22 @@ void normalizeVector(TVector vec) {
 	vec->z /= length;
 }
 
-TVector doDotProduct(TVector vec, double scalar) {
+TVector doScalarProduct(TVector vec, double scalar) {
 	TVector nvec = createVector(vec->x * scalar, vec->y * scalar, vec->z * scalar);
 	return nvec;
+}
+double doDotProduct(TVector vecA, TVector vecB, double angle) {
+	TVector vec = createNullVector();
+	double lenA, lenB, cosAngle;
+
+	if (vec == NULL)
+		return NULL;
+
+	lenA = getLength(vecA);
+	lenB = getLength(vecB);
+	cosAngle = cos(angle);
+
+	return lenA * lenB * cosAngle;
 }
 TVector doCrossProduct(TVector vecA, TVector vecB) {
 	TVector vec = createVector(0, 0, 0);

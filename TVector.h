@@ -27,7 +27,8 @@ void setZ(TVector vec, double z);
 double getLength(TVector vec);
 void normalizeVector(TVector vec);
 
-TVector doDotProduct(TVector vec, double scalar);
+TVector doScalarProduct(TVector vec, double scalar);
+TVector doDotProduct(TVector vecA, TVector vecB, double angle);
 TVector doCrossProduct(TVector vecA, TVector vecB);
 TVector doNormalize(TVector vec);
 
