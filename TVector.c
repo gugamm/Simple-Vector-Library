@@ -71,11 +71,7 @@ TVector doScalarProduct(TVector vec, double scalar) {
 	return nvec;
 }
 double doDotProduct(TVector vecA, TVector vecB, double angle) {
-	TVector vec = createNullVector();
 	double lenA, lenB, cosAngle;
-
-	if (vec == NULL)
-		return NULL;
 
 	lenA = getLength(vecA);
 	lenB = getLength(vecB);
