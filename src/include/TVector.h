@@ -30,6 +30,8 @@ void normalizeVector(TVector vec);
 double doDotProduct(TVector vecA, TVector vecB, double angle);
 TVector doScalarProduct(TVector vec, double scalar);
 TVector doCrossProduct(TVector vecA, TVector vecB);
+TVector doSum(TVector vecA, TVector vecB);
+TVector doSub(TVector vecA, TVector vecB);
 TVector doNormalize(TVector vec);
 
 TVector createCopyVector(TVector vec);
